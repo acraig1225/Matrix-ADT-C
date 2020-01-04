@@ -1,0 +1,82 @@
+/********************************************************************************************************************
+*	File: README
+*	Name: Andrew Craig
+*	CruzID: acraig1
+*	Assignment: pa2
+*********************************************************************************************************************/
+
+
+/********************************************************************************************************************
+*											   List ADT
+*********************************************************************************************************************/
+
+Description: The purpose of the List ADT is to implement a doubly linked list that stores values of type void*. By
+			 storing values of type void* the List ADT gains the ability to store any data type passed by the caller.
+			 The List ADT keeps track of the location of the front of the list, the back of the list, and a cursor  
+			 that has the ability to traverse the list at will.
+			 
+			 Contains the following functions: 
+			 		* Constructors and destructors to create new lists and destory old ones.
+			 		* Access functions to retrive data from the current list or to find the current position of 
+			 		  the cursor.
+			 		* Manipulation procedures to add or remove elements from the current list and to change
+			 		  the location of the cursor.
+
+
+/********************************************************************************************************************
+*											   Matrix ADT
+*********************************************************************************************************************/
+
+Description: The purpose of the Matrix ADT is to create a calculator capable of quickly performing matrix operations
+			 on an n x n square matrix. Matrix ADT is able to perform these operations quckly by exploiting the 
+			 sparsness of the matrix. The underlying structure of Matrix ADT is an array of lists with each list
+			 representing a row in the matrix and each element in the list representing a column in the matrix. The
+			 elements of each list are known as the data type Entry. The entries will hold a column number for their
+			 position in a given row as well as their respective value. The lists will always maintain a column sorted
+			 order in order to quickly perform matrix operations.
+			 
+			 Contains the following functions: 
+			 		* Constructors and destructors to create new matrices and destory old ones.
+			 		* Access functions to retrive the size and current number of non-zero entries in a Matrix.
+			 		* Manipulation procedures to change the value of a particular Entry or to reset a matrix to the
+			 		  zero matrix.
+			 		* Matrix arithmetic operations that can find the sum, difference, or product of two given matrices.
+			 		  As well as the ability to transpose a matrix and mutiply a matrix by a scalar.
+			 		* Misc. operations to print a matrix, copy a matrix, and determine if two matrices are equal.
+
+
+/********************************************************************************************************************
+*											Included Files
+*********************************************************************************************************************/
+
+1)	File: Sparse.c
+	Description: The client module for the Matrix ADT. Reads the values for two matrices from a given input file and
+				 uses the values to create sparce matrices. It will then perform various matrix operations on the two
+				 matrices and write the results to a given output file.
+
+2)	File: Matrix.c
+	Description: Implementation file for Matrix ADT, containing struct and function definitions. Also contains the
+				 delcaration and implementation of the EntryObj struct and its associated constructors and destructors. 
+
+3)	File: Matrix.h
+	Description: Header file for Matrix ADT, contains the typedef of the MatrixObj and prototypes of exported functions.
+
+4)	File: MatrixTest.c
+	Description: Test file for the Matrix ADT to test the functions of Matrix in isolation.
+
+5)	File: List.h
+	Description: Header file for List ADT, contains the typedef of the ListObj and prototypes of exported functions.
+
+6)	File: List.c
+	Description: Implementation file for List ADT, containing struct and function definitions. Also contains the
+				 delcaration and implementation of the NodeObj struct and its associated constructors and destructors.
+
+6)	File: ListTest.c
+	Description: Test file for the List ADT to test the functions of List in isolation.
+
+8)	File: Makefile
+	Description: Has the ability to create an executable binary files for Sprace.c, MatrixTest.c, and ListTest.c. Also 
+				 can remove any .o files associated with Sprace.c, MatrixTest.c, and ListTest.c once finished.
+
+9)	File: README
+	Description: Provides a brief description of each file its role in the project.

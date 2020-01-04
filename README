@@ -7,7 +7,7 @@
 
 
 /********************************************************************************************************************
-*											   List ADT
+*							List ADT
 *********************************************************************************************************************/
 
 Description: The purpose of the List ADT is to implement a doubly linked list that stores values of type void*. By
@@ -24,7 +24,7 @@ Description: The purpose of the List ADT is to implement a doubly linked list th
 
 
 /********************************************************************************************************************
-*											   Matrix ADT
+*							Matrix ADT
 *********************************************************************************************************************/
 
 Description: The purpose of the Matrix ADT is to create a calculator capable of quickly performing matrix operations
@@ -46,7 +46,7 @@ Description: The purpose of the Matrix ADT is to create a calculator capable of 
 
 
 /********************************************************************************************************************
-*											Included Files
+*							Included Files
 *********************************************************************************************************************/
 
 1)	File: Sparse.c
